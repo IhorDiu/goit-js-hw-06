@@ -9,8 +9,6 @@ const ref = {
 ref.createBoxesBtn.addEventListener('click', onCreateBoxesBtn);
 ref.destroyBoxesBtn.addEventListener('click', onDestroyBoxesBtn);
 
-
-
 function createBoxes(amount) {
   let makeup = '';
   let step = 0;
@@ -21,8 +19,6 @@ function createBoxes(amount) {
   }
   return makeup;
 };
-
-console.log("getRandomHexColor()", getRandomHexColor())
 
  function onCreateBoxesBtn() {
  const counter = ref.counterValue.valueAsNumber;
@@ -35,6 +31,6 @@ ref.boxesMarkup.innerHTML = '';
 };
 
 function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
+return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+};
 
